@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>   
+    <div class="header">
+    <div class="image">
+        <img src="css/2028989.png" alt="crud logo"> 
+    </div>  
+    <div class=" h3 text-center"><h3>products store</h3></div>  
+</div>
+    <div class="container">  
+    <div class="w-75 m-auto py-5">
+        <div>
+            <div class="form-group">
+                <label for=" productName">productName</label>
+                <input class="form-control" type="text" id="productName">
+            </div>
+            <div class="form-group">
+                <label for=" productPrice">productPrice</label>
+                <input class="form-control" type="text" id="productPrice">
+            </div>
+            <div class="form-group">
+                <label for=" productCategory">productCategory</label>
+                <input class="form-control" type="text" id="productCategory">
+            </div>
+            <div class="form-group">
+                <label for=" productDescription">productDescription</label>
+                <textarea class="form-control" type="text" id="productDescription"></textarea>
+            </div>
+            <button id="mainBtn" onclick="addproduct();" class="btn btn-outline-info"> add product</button>
+        </div>
+    </div>
+
+    <div class="w-50 py-3 m-auto">
+        <input onkeyup="search(this.value)"  placeholder="search...." type="text" class="form-control"> 
+    </div>  </div> 
+    <div class="container"> 
+        <div class="table-responsive-sm">
+        <table class="table text-center"> 
+            <thead> 
+                <tr> 
+                 <!-- <th scope="col">ID</th> -->
+                <th scope="col"> Name</th> 
+               <th scope="col" > Price</th> 
+               <th scope="col"> Category</th>
+               <th scope="col">Description</th> 
+               <th scope="col">update</th> 
+               <th scope="col">delete </th>   
+            </tr>
+            </thead>
+            
+            <tbody id="tableBody"> 
+            
+            </tbody> 
+        </table> 
+    </div>
+    </div>  
+
+
+
+
+
+    <script src="java/main.js"></script>
+</body>
+
+</html>

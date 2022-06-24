@@ -1,0 +1,13 @@
+.image{
+    width: 40%; 
+    margin: auto;
+} 
+.image img{
+    width: 100%;
+} 
+.header .h3{
+    background-color: rgba(0, 0, 0, 00.05); 
+} 
+.header .h3 h3{
+    font-size: 15px;
+}
